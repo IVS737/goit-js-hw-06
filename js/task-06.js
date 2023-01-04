@@ -1,6 +1,7 @@
 const input = document.querySelector("#validation-input");
 console.log(input);
-const dataLength = 6;
+const dataLength = document.querySelector("dataset");
+console.log(dataLength);
 
 input.addEventListener("blur", borderChange);
 
