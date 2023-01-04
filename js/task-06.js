@@ -1,12 +1,9 @@
 const input = document.querySelector("#validation-input");
-console.log(input);
-const dataLength = document.querySelector("dataset");
-console.log(dataLength);
 
 input.addEventListener("blur", borderChange);
 
 function borderChange() {
-  if (input.value.length === dataLength) {
+  if (input.value.length === Number(input.dataset.length)) {
     input.classList.add("valid");
     input.classList.remove("invalid");
   } else {
